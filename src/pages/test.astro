@@ -1,0 +1,21 @@
+---
+import {Image} from 'astro:assets';
+
+import icon from '../images/icon.jpg';
+---
+
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro&Tailwind</title>
+	</head>
+	<body>
+		<h1 class="text-4xl text-green-700 text-center font-semibold">Astro&Tailwind</h1>
+        <div class="w-[600px] lg:container mx-auto">
+            <Image src={icon} alt="アイコン" quality="max" class="w-full" />
+        </div>
+	</body>
+</html>
